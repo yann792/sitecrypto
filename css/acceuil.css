@@ -1,0 +1,169 @@
+#titre{
+    text-align: center;
+    color:white;
+}
+html{
+    width:100%;
+    height: 100%;
+}
+header{
+    width: 100%; 
+    height: 114px; 
+    background-image: url(../images/cryptography.jpg);
+    overflow: auto; 
+}
+
+
+
+body{
+    background-image: url(../images/fond2.jpg); 
+    margin: 0;
+    height: 100%;
+}
+.titre_article{
+    text-decoration: underline;
+    color: white;
+}
+#article1{  
+    width: 85%; 
+    border: 1px solid white; 
+    color:white;
+}
+#article2{ 
+    width: 85%; 
+    border: 1px solid white;
+    color:white; 
+}
+#article3{  
+    width: 85%; 
+    border: 1px solid white;
+    color:white
+}
+#article4{  
+    width: 85%; 
+    border: 1px solid white;
+    color:white;}
+
+#article5{  
+    width: 85%; 
+    border: 1px solid white;
+    color:white;}
+
+#menu ul {
+    text-align: center;
+    width: 100%;
+    padding:0;
+    margin:0;
+    list-style-type:none;
+}
+
+#menu li {
+    display: inline;
+    margin-left:2px;
+}
+
+#menu ul li a {
+ display: inline-block; 
+ width:200px;
+ background-color:#193950;
+ color:white;
+ text-decoration:none;
+ text-align:center;
+ padding:5px;
+ border:2px solid;
+ border-color:#DCDCDC #696969 #696969 #DCDCDC;
+}
+
+#menu ul li a:hover {
+ background-color:#D3D3D3;
+ border-color:#696969 #DCDCDC #DCDCDC #696969;
+ } 
+
+#sidebar {
+	float: right;
+    margin: 0;
+    padding: 0px;
+    text-align:center;
+    width:15%;
+    background-color:#0CA471    ;
+}
+
+#sidebar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+}
+
+#sidebar li a {
+    display: block;
+ 	border:1px solid white;
+    color:white;
+    height:30px;
+    padding: 8px 0 8px 16px;
+    text-decoration: white;
+}
+
+#sidebar li:last-child{
+    border-bottom: none;
+}
+
+#sidebar li a:hover {
+    background-color: #DCDCDC;
+    color: grey;
+}
+
+main{
+    color:white;
+}
+
+main a{
+    color:lightblue;
+}
+
+#cesar  table{
+    border : solid lightblue;
+}
+#cesar td, th{
+    border : 1px solid lightblue;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.gras{
+    font-weight: bold;
+}
+
+.centrer{
+    text-align:center;
+}
+
+#image_cesar{
+    width : 20%;
+}
+#copyright_cesar{
+    font-size:8px;
+}
+
+#cesar textarea{
+    width:50%;
+}
+#vigenere textarea{
+    width:50%;
+}
+#freq td, th {
+    border : 1px solid lightblue;
+}
+#freq tr {
+    border : 1px solid lightblue;
+
+}
+#frequence_fr {
+    width:400px;
+    height:100px;
+    margin: "auto";
+}
+#log {background-color: #0CA471 }
+}
+#text_freq_pa {text-align: :justify ;width:70%}

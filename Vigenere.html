@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">	
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Vigenère</title>
+	<link rel="stylesheet" href="css/acceuil.css" type="text/css" />
+</head>
+
+<body>
+	<header>
+          <h1 id ="titre">Chiffre de Vigenère</h1>
+            <nav id="menu">
+              <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="Cesar.html">Chiffre de CESAR</a></li>
+                <li><a href="Vigenere.html">Chiffrement de VIGENERE</a></li>
+                <li><a href="decodevigenere.html">Dechiffrer VIGENERE</a></li>
+                <li><a href="frequence.html">Fréquence</a></li>
+              </ul>
+            </nav>    
+    </header>
+    	
+    <aside id ="sidebar">
+        <ul>
+             <li><a href="Sources.html">Sources</a></li>
+            <li><a href="Musique.html">Musique</a></li>
+        </ul>
+      </aside>
+    <main id="vigenere">
+    <img src="images/tableV.png" alt="" id="table" width="400" height="400" style="float:left" align="center" />
+        <div style="float:right; height: 400px;" >
+    	<h2>Qu'est-ce que le chiffre de Vigenère ?</h2>
+    	<p>Le chiffre de Vigenère est une "amélioration" du chiffre de César. En effet, au lieu d'avoir une simple clef numérique, la clef est un mot.</p> 
+    	<p>On peut par utiliser la table de VIGENERE.</p>
+    	<p>Exemple: clé : MUSIQUE<br>
+        texte : j'adore ecouter la radio toute la journee</p>
+        <br>
+        <p> Texte en clair:   J ADORE ECOUTER LA RADIO TOUTE LA JOURNEE <br>
+            Clé répétée     :   M USIQU EMUSIQU EM USIQU EMUSI QU EMUSIQU <br>
+ <br>
+ Colonne O, ligne I: on obtient la lettre W. <br>
+ Colonne D, ligne S: on obtient la lettre V. <br>
+ Colonne A, ligne U: on obtient la lettre U. <br>
+ Colonne J, ligne M: on obtient la lettre V<br> </p> </div>
+ 
+    <div>
+		<h2>Chiffrer un message en choisissant une clef</h2>
+		<span> Clef à utiliser : </span>
+        <br>
+    	<textarea rows="1" placeholder="Ecrivez votre mot clef" id="clef" ></textarea>
+		<br>
+        <span>Texte à traduire : </span>
+        <br>
+		<textarea rows="3" placeholder="Ecrivez votre texte" id="texte_vigenere" ></textarea>
+        <br>
+		<button onclick="mes_crypte()">Traduire</button>
+		<pre id="trad_vigenere"></pre>
+		<script src="js/Vigenere.js"></script>
+
+        
+        <br>
+            </div>
+	</main>
+
+</body>
+</html>

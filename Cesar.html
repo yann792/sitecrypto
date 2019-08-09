@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">	
+
+<head>
+	<meta charset="UTF-8" />
+	<title>César</title>
+	<link rel="stylesheet" href="css/acceuil.css" type="text/css" />
+</head>
+
+<body>
+	<header>
+          <h1 id ="titre">Chiffre de César</h1>
+            <nav id="menu">
+              <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="Cesar.html">Chiffre de CESAR</a></li>
+                <li><a href="Vigenere.html">Chiffrement de VIGENERE</a></li>
+                <li><a href="decodevigenere.html">Decrypter VIGENERE</a></li>
+                <li><a href="frequence.html">Fréquence</a></li>
+              </ul>
+            </nav>    
+    </header>
+    	
+    <aside id ="sidebar">
+        <ul>
+            <li><a href="Sources.html">Sources</a></li>
+            <li><a href="Musique.html">Musique</a></li>
+        </ul>
+      </aside>
+    <main id="cesar">
+    	<h2>Qu'est-ce que le chiffre de César ?</h2>
+    	<p>Le chiffre de César est aussi appelé le chiffrement par décalage. En effet, il s'agit de décaler l'alphabet d'un nombre de lettre <span class="italic">n</span> donné. Ce nombre <span class="italic">n</span> est appelé la <span class="gras">clef</span></p>
+    	<p>On peut par exemple utiliser la clef 3, A deviendra alors D, B deviendra E, etc.Une fois arrivé à la lettre Z, on reprend à la lettre A.
+    	</p>
+    	<p class="centrer"><a href="https://commons.wikimedia.org/wiki/File:Caesar3.svg#/media/File:Caesar3.svg"><img id="image_cesar" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/1200px-Caesar3.svg.png" alt="Caesar3.svg"></a></p>
+    	<p>Il existe 25 clefs différentes, il est donc relativement simple de décoder les messages même si on ne connaît pas la clef.</p>
+    	<h2>Tableau de chiffrement utilisant une clef donnée</h2>
+    	<span> Clef à utiliser : </span>
+    	<select id="clef1" onchange="tab_crypte(this)">
+		</select>
+		<table>
+			<tr id="lg_en_clair">
+				<th>Lettre en clair
+				</th>
+			</tr>
+			<tr id="lg_en_code">
+				<th>Lettre codée
+				</th>
+			</tr>
+		</table>
+		<h2>Chiffrer un message en choisissant une clef</h2>
+		<span> Clef à utiliser : </span>
+    	<select id="clef2">
+		</select>
+		<br>
+		<textarea rows="3" placeholder="Ecrivez votre texte" id="texte_cesar" ></textarea>
+        <br>
+		<button onclick="mes_crypte()">Traduire</button>
+        <br>
+		<pre id="trad_cesar"></pre>
+		<h2>Déchiffrer un message (sans avoir la clef)</h2>
+        <textarea rows="3" placeholder="Ecrivez votre texte crypté" id="texte_crypte" ></textarea>
+        <br>
+        <button onclick="mes_decrypte()">Traduire</button>
+        <br>
+        <pre id="decrypt"></pre>
+        <br>
+	</main>
+<script src="js/Cesar.js"></script>
+</body>
+</html>

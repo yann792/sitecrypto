@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>page d'accueil</title>
+        <link rel="stylesheet" href="css/acceuil.css" /> 
+        
+    </head>
+
+    <body>
+      	<header>
+          <h1 id ="titre">Algorithmes et Cryptographie</h1>
+            <nav id="menu">
+              <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="Cesar.html">Chiffre de CESAR</a></li>
+                <li><a href="Vigenere.html">Chiffrement de VIGENERE</a></li>
+                <li><a href="decodevigenere.html">Dechiffrer VIGENERE</a></li>
+                <li><a href="frequence.html">Fréquence</a></li>
+              </ul>
+             </nav>    
+    		</header>
+    	
+        <aside id ="sidebar">
+            <ul>
+                <li><a href="Sources.html">Sources</a></li>
+                <li><a href="#">Lien 2</a></li>
+       
+            </ul>
+        </aside>
+        <main id ="contenu"> 
+       
+          <article id =article1>
+             <h2 class= "titre_article">Cryptographie</h2>
+             <P>La cryptographie vient du grec kruptos qui veut dire caché et de graphein qui signifie écrire.
+La cryptographie est donc un ensemble des techniques permettant de protéger une communication au moyen d'un code graphique secret.
+Etant donné qu'une lettre ou une communication téléphonique peuvent êtres interceptées par un individu mal intentionné, il est prudent de rendre le message incompréhensible à l'aide de la cryptographie.<br>
+Depuis Jules César, qui a été sans doute le premier a l'utiliser pour communiquer avec ses troupes, jusqu'à l'armée allemande qui s'est servie de machines électromécaniques lors de la deuxième guerre mondiale, la cryptographie a fait d'énormes progrès avec l'arrivée de l'informatique.
+Car la cryptographie se sert de la puissance des ordinateurs et des progrès mathématiques pour rendre tout message incompréhensible par un tiers. </P>
+           </article>
+
+          <article id=article2>
+            <h2 class ="titre_article"><a href="Cesar.html"> Chiffre de CESAR</a></h2>
+            <p> Le chiffre de César est aussi appelé le chiffrement par décalage. En effet, il s'agit de décaler l'alphabet d'un nombre de lettredonné. Ce nombre est appelé la clef. </p>
+          </article>
+
+
+          <article id=article3>
+            <h2 class ="titre_article"><a href="Vigenere.html"> Chiffre de VIGENERE</a></h2>
+            <p> Le chiffre de Vigenère est une "amélioration" du chiffre de César. En effet, au lieu d'avoir une simple clef numérique, la clef est un mot. </p>
+          </article>
+
+          <article id=article4>
+            <h2 class ="titre_article"><a href="decodevigenere.html"> Decrypter VIGENERE</a></h2>
+            <p>On pense que Charles Babbage effectua la première véritable cryptanalyse du chiffre de Vigenère vers 1854. En parallèle, un officier prussien à la retraite, Friedrich Wilhelm Kasiski parvint au même résultat sans avoir eu vent des travaux de Babbage puisque ce dernier ne les avait pas publiés. Kasiski rédigea Die Geheimschriften und die Dechiffrierkunst en 1863 où il présentait le test qui allait porter son nom : le test de Kasiski qui permet d'estimer la taille de la clé. <br>
+            Une fois la longueur de la clef trouvée, on peut découper le texte en autant de sous-textes, 5 dans le cas présent, chacun d'entre eux étant obtenu par un même chiffre de César, et peut être décrypté par analyse de fréquences. Chaque texte k étant la suite des lettres qui sont à la position k modulo 5 La comparaison entre les distributions des lettres dans chacun des sous-textes (on peut utiliser un indice de coïncidence défini entre deux distributions), permet de découvrir les décalages entre les lettres du mot clef, et facilite la résolution.<br> 
+              L'indice de coïncidence est une technique de cryptanalyse inventée par William F. Friedman en 1920 (publiée dans The Index of Coincidence and its Applications in Cryptography) et améliorée par son collaborateur Solomon Kullback. 
+L'indice permet de savoir si un texte a été chiffré avec un chiffre mono-alphabétique ou un chiffre poly-alphabétique en étudiant la probabilité de répétition des lettres du message chiffré. Il donne également une indication sur la longueur de la clé probable.  </p>
+          </article>
+
+          <article id=article5>
+            <h2 class ="titre_article"><a href="frequence.html"> Analyse des fréquences de lettres</a></h2>
+            <p> L’analyse fréquentielle, ou analyse de fréquences, est une méthode de cryptanalyse dont la description la plus ancienne est réalisée par Al-Kindi au IXe siècle. Elle consiste à examiner la fréquence des lettres employées dans un message chiffré. Cette méthode est fréquemment utilisée pour décoder des messages chiffrés par substitution, dont un exemple très simple est le chiffre de César. 
+            L'analyse fréquentielle est basée sur le fait que, dans chaque langue, certaines lettres ou combinaisons de lettres apparaissent avec une certaine fréquence. Par exemple, en français, le e est la lettre la plus utilisée, suivie du a et du s. Inversement, le w est peu utilisé.  </p>
+          </article>
+            
+
+        </main>
+
+        
+ 
+    </body>
+</html>

@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="fr">	
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Decrypter Vigenere</title>
+	<link rel="stylesheet" href="css/acceuil.css" type="text/css" />
+
+</head>
+
+<body>
+	<header>
+          <h1 id ="titre">Chiffre de Vigenère</h1>
+            <nav id="menu">
+              <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="Cesar.html">Chiffre de CESAR</a></li>
+                <li><a href="Vigenere.html">Chiffrer de VIGENERE</a></li>
+                <li><a href="decodevigenere.html">Dechiffrer VIGENERE</a></li>
+                <li><a href="frequence.html">Fréquence</a></li>
+              </ul>
+            </nav>    
+    </header>
+    	
+    <aside id ="sidebar">
+        <ul>
+             <li><a href="Sources.html">Sources</a></li>
+            <li><a href="Musique.html">Musique</a></li>
+           
+        </ul>
+      </aside>
+    <main id="vigenere">
+
+<textarea rows="4" placeholder="Ecrivez votre texte" id="message" >SSXUQXRIEJASYDWPDTMVPWWEICHWGVAOQMRSWIDPTGNAYGBIQWHOPXSCUIMMTBXEERVIHECHWAYKSRFWDIWGRRWIXHTAESRXTMCYTGKQVQSWDSHSWXEHOMESCRIXERVEEWTSXMMIHIDQXBIQPTGQQYISWPIRVMQRHSXXIHTYEMAGEHEXSRFHXGTMVJDSGVHWBYSXGPQWKWKZSQZIEWPQXUZPWIZXPBSGZTOYMZTQPQYGGZUKCSVARHQSZWRWIZGXSYJUJWXDEXHEUICHPQWKWKZIHHEZHXGUGIASYDWKCMEMCGTMVTGWQYMGIBVTGWMMTBXMPTGXMMAZIDGDAQQGTZEMYGOMFHJSXDIUOMFICBSHIBPVQ</textarea>
+        <br>
+	
+
+
+ <form>
+    <p><input name="b0" id="b0" value="ic du texte" onclick="afficherictext()" type="button"/></p>
+<p>IC du texte
+    <input id="IC_text" name="IC_text" size="15" maxchars="20" value="" type="text"></p></form>  	
+<form>
+    <p><input name="b1" id="b1" value="longueur de la clé" onclick="L_cle()" type="button"/></p>
+<p>longueur probable de la clé = 
+    <input id="lgcle" name="lgcle" size="15" maxchars="20" value="" type="text"></p></form>
+
+<form>
+    <p><input name="b2" id="b2" value="cle possible" onclick="clesans()" type="button"/></p>
+<p>cle avec une recherche sans IC= 
+    <input id="clesansic" name="clesansic" size="15" maxchars="15" value="" type="text"></p>
+</form>
+<form>
+    <p><input name="b3" id="b3" value="cle probable" onclick="rechercheCle()" type="button"/></p>
+<p>cle probable utilisant les IC= 
+    <input id="cle" name="cle"  maxchars="20" value="" size="15" type="text"></p></form>
+    <br>
+<form >
+    <input onclick='decrypte()' type='button' value='texte claire' id='button'><br>
+    <textarea id="textclair" rows="4"></textarea>
+</form>
+
+	</main>
+ <script src="js/decode.js"></script>
+
+
+
+</body>
+</html>

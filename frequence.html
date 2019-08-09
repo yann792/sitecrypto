@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">  
+
+<head>
+  <meta charset="UTF-8" />
+  <title>frequence lettre </title>
+  <link rel="stylesheet" href="css/acceuil.css" type="text/css" />
+
+ 
+</head>
+
+<body id="freq">
+  <header>
+          <h1 >Fréquence lettre</h1>
+            <nav id="menu">
+              <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="Cesar.html">Chiffre de CESAR</a></li>
+                <li><a href="Vigenere.html">Chiffrement de VIGENERE</a></li>
+                <li><a href="decodevigenere.html">Dechiffrer VIGENERE</a></li>
+                <li><a href="frequence.html">Fréquence</a></li>
+              </ul>
+            </nav>    
+    </header>
+      
+    <aside id ="sidebar">
+        <ul>
+             <li><a href="Sources.html">Sources</a></li>
+            <li><a href="#">Lien 2</a></li>
+        </ul>
+      </aside>
+    <main>
+
+        <h2>Decrypter un message en utilisant les fréquences d'apparition des lettres</h2>
+
+        <div id=text_freq_pa><p>L’analyse fréquentielle, ou analyse de fréquences, est une méthode de cryptanalyse dont la description la plus ancienne est réalisée par Al-Kindi au ixe siècle. Elle consiste à examiner la fréquence des lettres employées dans un message chiffré. Cette méthode est fréquemment utilisée pour décoder des messages chiffrés par substitution, dont un exemple très simple est le chiffre de César.</p>
+        
+
+      <p>L'analyse fréquentielle est basée sur le fait que, dans chaque langue, certaines lettres ou combinaisons de lettres apparaissent avec une certaine fréquence. Par exemple, en français, le e est la lettre la plus utilisée, suivie du a et du s. Inversement, le w est peu utilisé.</p>
+
+
+      <p>Ces informations permettent aux cryptanalystes de faire des hypothèses sur le texte clair, à condition que l'algorithme de chiffrement conserve la répartition des fréquences, ce qui est le cas pour des substitutions mono-alphabétiques et poly-alphabétiques.</p>
+
+      
+      <p>Une deuxième condition nécessaire pour appliquer cette technique est la longueur du cryptogramme. En effet, un texte trop court ne reflète pas obligatoirement la répartition générale des fréquences des lettres. De plus, si la clé est de la même longueur que le message, il ne pourra y avoir de répétition de lettre et l'analyse fréquentielle deviendra impossible.</p>
+
+    </div>
+        <br>
+        <textarea name="textarea" id="text2" name="text2"  style="width:1000px;height:100px;">XY AXJ BYRJMYJ, MQQMVUVXYJ GXR NCBWJR N'UYX LMBY N'PCLLX XJ BGR XAVBDBVXYJ, XY IMAX NU AMYNXGMFVX, RUV GX QGMJVX NU LUV NU QMGMBR VCEMG. GX VCB DBJ AXJJX QMVJBX NX LMBY KUB XAVBDMBJ. MGCVR GX VCB APMYWXM NX ACUGXUV, RXR QXYRXXR G'XIIVMEXVXYJ, GXR SCBYJUVXR NX RXR VXBYR RX NXGBXVXYJ XJ RXR WXYCUZ RX PXUVJXVXYJ G'UY G'MUJVX. GX VCB AVBM MDXA ICVAX QCUV IMBVX DXYBV GXR LMWBABXYR, GXR APMGNXXYR XJ GXR MRJVCGCWUXR. GX VCB QVBJ GM QMVCGX XJ NBJ MUZ RMWXR NX FMFEGCYX : JCUJ PCLLX KUB GBVM AXJJX XAVBJUVX XJ LX IXVM ACYYMBJVX RCY XZQGBAMJBCY VXDXJBVM GM QCUVQVX, LXJJVM GX ACGGBXV N'CV M RCY ACU XJ, ACLLX JVCBRBXLX NMYR GX VCEMULX, BG ACLLMYNXVM. MGCVR DBYVXYJ JCUR GXR RMWXR NU VCB, LMBR BGR YX QUVXYJ QMR GBVX G'XAVBJUVX XJ IMBVX ACYYMBJVX MU VCB G'XZQGBAMJBCY. GX VCB FMGJPMRMV IUJ NCYA JVXR XIIVMEX, GM ACUGXUV NX RCY DBRMWX APMYWXM XJ RXR WVMYNR IUVXYJ FCUGXDXVRXR. GM VXBYX, XY VMBRCY NXR QMVCGXR NU VCB XJ NX RXR WVMYNR, DBYJ NMYR GM RMGGX NU IXRJBY. GM VXBYX QVBJ GM QMVCGX XJ NBJ : KUX GX VCB DBDX XJXVYXGGXLXYJ ! KUX JXR QXYRXXR YX J'XIIVMEXYJ QMR XJ KUX JCY DBRMWX YX APMYWX QMR NX ACUGXUV. BG E M NMYR JCY VCEMULX UY PCLLX KUB QCRRXNX XY GUB G'XRQVBJ NXR NBXUZ RMBYJR. QXYNMYJ GXR SCUVR NX JCY QXVX, UYX GULBXVX, UY NBRAXVYXLXYJ XJ UYX RMWXRRX ACLLX GM RMWXRRX NXR NBXUZ, IUVXYJ JVCUDXR XY GUB, XJ GX VCB YMFUAPCNCYCRCV JCY QXVX G'XJMFGBJ ACLLX APXI NXR NXDBYR, NXR LMWBABXYR, NXR APMGNXXYR XJ NXR MRJVCGCWUXR. QMVAX KU'UY XRQVBJ RUQXVBXUV, UYX BYJXGGBWXYAX, UY NBRAXVYXLXYJ, G'XZQGBAMJBCY NXR RCYWXR, G'BYJXVQVXJMJBCY NXR XYBWLXR, GM RCGUJBCY NXR QVCFGXLXR, IUVXYJ JVCUDXR XY GUB, XY NMYBXG, M KUB GX VCB MDMBJ NCYYX GX YCL NX FXGJRPMRRMV, KUX NMYBXG RCBJ NCYA MQQXGX XJ BG IXVM ACYYMBJVX G'XZQGBAMJBCY.
+
+</textarea>
+        <br>
+      <button name="button" onclick="JustDoit()">GO GO GO!</button>
+      <br>
+      <aside style="float:left" id="log">FREQUENCE DES CARACTERES</aside>   
+
+      <aside id ="aside_freq">
+      <table id="frequence_fr">
+          <tr>
+            <th>Lettre</th>
+            <th>Fréquences pour la langue française</th>
+          </tr>
+          <tr>
+            <td>E</td>
+            <td>17.76</td>
+          </tr>
+          <tr>
+            <td>S</td>
+            <td>8.23</td>
+          </tr>
+          <tr>
+            <td>A</td>
+            <td>7.68</td>
+          </tr>
+          <tr>
+            <td>N</td>
+            <td>7.61</td>
+          </tr>
+          <tr>
+            <td>T</td>
+            <td>7.30</td>
+          </tr>
+          <tr>
+            <td>I</td>
+            <td>7.23</td>
+          </tr>
+          <tr>
+            <td>R</td>
+            <td>6.81</td>
+          </tr>
+          <tr>
+            <td>U</td>
+            <td>6.05</td>
+          </tr>
+          <tr>
+            <td>L</td>
+            <td>5.89</td>
+          </tr>
+          <tr>
+            <td>O</td>
+            <td>5.34</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td>3.60</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td>3.32</td>
+          </tr>
+          <tr>
+            <td>P</td>
+            <td>3.24</td>
+          </tr>
+          <tr>
+            <td>M</td>
+            <td>2.72</td>
+          </tr>
+          <tr>
+            <td>Q</td>
+            <td>1.34</td>
+          </tr>
+          <tr>
+            <td>V</td>
+            <td>1.27</td>
+          </tr>
+          <tr>
+            <td>G</td>
+            <td>1.10</td>
+          </tr>
+          <tr>
+            <td>F</td>
+            <td>1.06</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td>0.80</td>
+          </tr>
+          <tr>
+            <td>H</td>
+            <td>0.64</td>
+          </tr>
+          <tr>
+            <td>X</td>
+            <td>0.54</td>
+          </tr>
+          <tr>
+            <td>Y</td>
+            <td>0.21</td>
+          </tr>
+          <tr>
+            <td>J</td>
+            <td>0.19</td>
+          </tr>
+          <tr>
+            <td>Z</td>
+            <td>0.07</td>
+          </tr>
+          <tr>
+            <td>K</td>
+            <td>0.00</td>
+          </tr>
+          <tr>
+            <td>W</td>
+            <td>0.00</td>
+          </tr>
+        </table>
+      </aside>
+
+
+       
+      <br>
+     </main>
+     <script src="js/frequencebis.js"> </script>  
+</body>
+</html>
