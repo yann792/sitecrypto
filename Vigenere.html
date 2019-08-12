@@ -25,6 +25,7 @@
         <ul>
              <li><a href="Sources.html">Sources</a></li>
             <li><a href="Musique.html">Musique</a></li>
+         <li><a href="https://cryptoyann.000webhostapp.com/"> site web </a></li>
         </ul>
       </aside>
     <main id="vigenere">
@@ -54,8 +55,10 @@
         <br>
 		<textarea rows="3" placeholder="Ecrivez votre texte" id="texte_vigenere" ></textarea>
         <br>
-		<button onclick="mes_crypte()">Traduire</button>
-		<pre id="trad_vigenere"></pre>
+		<form >
+         <input onclick='mes_crypte()' type='button' value='traduire' id='button'><br>
+        <textarea id="texte_trad" rows="4"></textarea>
+        </form>
 		<script src="js/Vigenere.js"></script>
 
         
