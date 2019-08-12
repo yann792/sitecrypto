@@ -8,7 +8,7 @@ function mes_crypte(){
 
 	var clef=document.getElementById("clef").value.toUpperCase();
 
-	var texte=document.getElementById("texte_vigenere").value.toUpperCase();
+	var texte=document.getElementById("texte_vigenere").value.toUpperCase().replace(/[^A-Z]/g, "");
 
 	var L_clef=clef.length;
 
@@ -21,12 +21,14 @@ function mes_crypte(){
 		var lettre=texte[i];
 
 		var cle_j=clef[j].charCodeAt(0)-65;
+		console.log(cle_j)
 
 		if (L.includes(lettre)){
 
 			nb=lettre.charCodeAt(0)-65;
 
             nb_crypte=(nb+cle_j)%26;
+
 
             lettre_crypte=String.fromCharCode(nb_crypte+65);
 
@@ -40,11 +42,12 @@ function mes_crypte(){
 
 		j=(j+1)%L_clef;
 
+
 		message_code+=lettre_crypte;
 
 	}
 
-	var texte_trad=document.getElementById("trad_vigenere");
+	var texte_trad=document.getElementById("texte_trad");
 
 	texte_trad.innerText=message_code;
 }
